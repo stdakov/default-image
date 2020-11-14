@@ -1,0 +1,6 @@
+vendor/*
+.idea
+.idea/vcs.xml
+composer.lock
+
+public/media/storage

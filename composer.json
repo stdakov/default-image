@@ -1,0 +1,27 @@
+{
+    "name": "stdakov/ipsumimg",
+    "description": "Easy, no bullshit placeholder images",
+    "license": "MIT",
+    "keywords": [
+        "lorem",
+        "ipsume",
+        "image"
+    ],
+    "authors": [
+        {
+            "name": "Stanislav Dakov",
+            "email": "st.dakov@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "st.dakov@gmail.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
