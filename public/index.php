@@ -26,7 +26,7 @@ if (isset($_POST['width']) && isset($_POST['height'])) {
     exit(1);
 }
 
-if (($width > 0 || $height > 0) && $width < 2000 && $height < 2000) {
+if (($width > 0 || $height > 0) && $width < 1000 && $height < 1000) {
 
     if ($width == 0) {
         $width = $height;
