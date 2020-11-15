@@ -3,11 +3,17 @@ Options +FollowSymLinks
 
 DirectoryIndex index.php
 <IfModule mod_rewrite.c>
+
+#RewriteEngine On
+#RewriteCond %{HTTPS} !on
+#RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
     RewriteEngine on
     RewriteBase /
 
 #rewrite rule for index.php
     RewriteCond %{THE_REQUEST} ^.*/index.php
+    #RewriteRule ^index\.php/(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
     RewriteRule ^index\.php/(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
     #work without index.php/controller_name/method
     RewriteCond %{REQUEST_FILENAME} !-f
