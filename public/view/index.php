@@ -61,9 +61,9 @@
             Wiki <strong>[<a target="_blank" href="/media/demo.html">Demo</a>]</strong>: <br />
 
             1. With url: <br /> <br />
-            Example: <strong><?= htmlspecialchars('<img src="http://' . $_SERVER['SERVER_NAME'] . '/300x200" />') ?></strong><br /> <br />
+            Example: <strong><?= htmlspecialchars('<img src="https://' . $_SERVER['SERVER_NAME'] . '/300x200" />') ?></strong><br /> <br />
             2. With aliases: <br />
-            first include <strong><?= htmlspecialchars('<script src="http://' . $_SERVER['SERVER_NAME'] . '/media/js/replace.js"></script>') ?></strong> in the footer of the page<br /><br />
+            first include <strong><?= htmlspecialchars('<script src="https://' . $_SERVER['SERVER_NAME'] . '/media/js/replace.js"></script>') ?></strong> in the footer of the page<br /><br />
 
             Example: <strong><?= htmlspecialchars('<img src="bg300x200" />') ?></strong><br />
             Example: <strong><?= htmlspecialchars('<img src="bg150" />') ?></strong> this will create image 150x150<br /><br />
